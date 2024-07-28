@@ -1,0 +1,53 @@
+{
+	"schemaVersion": 1,
+
+	"id": "satchel",
+	"version": "${version}",
+	"license": "CC0-1.0",
+
+	"name": "Satchel",
+	"description": "Improved resource and data pack features",
+	"icon": "assets/satchel/icon.png",
+	"authors": [
+		"Trigam"
+	],
+	"contact": {
+		"homepage": "https://satchel.trigam.dev",
+		"sources": "https://github.com/TrigamDev/Satchel",
+		"issues": "https://github.com/TrigamDev/Collections/issues"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.github_releases": "https://github.com/TrigamDev/Satchel/releases",
+				"modmenu.discord": "https://discord.com/invite/KxYudA7Grx",
+
+				"modmenu.kofi": "https://ko-fi.com/Trigam",
+				"modmenu.mastodon": "https://wetdry.world/@trigam",
+				"modmenu.modrinth": "https://modrinth.com/user/Trigam",
+				"modmenu.reddit": "https://www.reddit.com/user/TrigamYT/",
+				"modmenu.twitch": "https://www.twitch.tv/TrigamDev",
+				"modmenu.twitter": "https://twitter.com/TrigamDev",
+				"modmenu.youtube": "https://www.youtube.com/@TrigamDev"
+			}
+		}
+	},
+
+	"environment": "*",
+	"entrypoints": {
+		"main": [ "dev.trigam.satchel.Satchel" ],
+		"client": [ "dev.trigam.satchel.SatchelClient" ]
+	},
+	"mixins": [
+		"satchel.mixins.json",
+		{ "config": "satchel.client.mixins.json", "environment": "client" }
+	],
+
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}

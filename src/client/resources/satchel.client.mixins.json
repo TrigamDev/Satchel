@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"compatibilityLevel": "JAVA_21",
+
+	"package": "dev.trigam.satchel.mixin",
+	"injectors": {
+		"defaultRequire": 1
+	},
+
+	"client": [
+
+	]
+}
